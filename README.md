@@ -57,3 +57,13 @@ It will then show you the JSON content for you to confirm that it looks good.  I
 
 # Installing npm packages
 
+For this project, as of this moment, we're going to just need Webpack and ReactJS
+
+In your command prompt or terminal, type `npm install webpack -g` and hit enter.
+
+So what happened here?  `npm install webpack` is fairly obvious.  You're asking NPM to install the package called webpack.  The `-g` tells NPM to install the package globally.  Since Webpack is more of a tool than a library, this lets us use Webpack for any project in the future without needing it to be a part of the individual project. 
+
+Next we're gonna install ReactJS.  Type in `npm install react --save`.  This installs the react library and the `--save` option adds react to the package.json file.  Go ahead and look, I'll wait.
+
+The `--save` is good in the case that you share this project with other people or you need to delete your `node_modules` folder, where NPM installs packages, for some reason.
+

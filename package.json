@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SnareHanger/webpack-react-tutorial/issues"
   },
-  "homepage": "https://github.com/SnareHanger/webpack-react-tutorial#readme"
+  "homepage": "https://github.com/SnareHanger/webpack-react-tutorial#readme",
+  "dependencies": {
+    "react": "^0.14.7"
+  }
 }
