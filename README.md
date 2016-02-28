@@ -13,7 +13,7 @@ Yes...there are.  My friend was talking to me one day about how every tutorial h
 2. Installing npm
 3. Initializing the project with NPM
 4. Installing the packages we want (React, Webpack)
-5. Setting up webpack for your project
+5. Basics with webpack
 6. Setting up the webpack.config.js file
 7. Writing some components with React in ES6!
 
@@ -67,3 +67,41 @@ Next we're gonna install ReactJS.  Type in `npm install react --save`.  This ins
 
 The `--save` is good in the case that you share this project with other people or you need to delete your `node_modules` folder, where NPM installs packages, for some reason.
 
+# Basics with Webpack
+
+First off...what the hell is Webpack?  Webpack is a module bundler.  This means it takes all your individual javascript files and compiles them together in a smart way into a single file so when you're using this with a real website, the browser only needs to download a single javascript file instead of 10 or 100 files.
+
+Let's do something real basic here.
+
+Create a file called `index.html`.  If you're lazy, you can grab my index.html file.
+
+Just set up a super basic html page, with a `<span id="name"></span>`
+
+Also, you're going to want to add a reference to a script that currently doesn't exist, but it will soon.
+
+So in the `<head>` tag, add `<script src="bundle.js"></script>` and save the file.
+
+Next we're gonna create `index.js` and put some super simple javascript in there.
+
+```javascript
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('name').textContent = 'Your name here';
+});
+```
+
+Save the file.
+
+Now, head back to the command prompt or terminal and in the root folder of your project, type `webpack index.js bundle.js`.  If everything is good you should get something like this:
+
+```bash
+Hash: b3c8fd7a7e03f5a5057b
+Version: webpack 1.12.14
+Time: 39ms
+    Asset     Size  Chunks             Chunk Names
+bundle.js  1.51 kB       0  [emitted]  main
+   [0] ./index.js 121 bytes {0} [built]
+```
+
+What happened there is webpack took your code from index.js and created a module out of it, and added it to bundle.js for use in the project.
+
+If you open up index.html in a browser, you should see your name pop up in that span tag you created.
