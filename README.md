@@ -79,7 +79,18 @@ Let's do something real basic here.
 
 Create a file called `index.html`.  If you're lazy, you can grab my index.html file.
 
-Just set up a super basic html page, with a `<span id="name"></span>`
+Just set up a super basic html page, 
+
+```html
+<html>
+    <head>
+        <script src="bundle.js"></script>
+    </head>
+    <body>
+        Here's that page you wanted, <span id="name"></span>
+    </body>
+</html>
+```
 
 Also, you're going to want to add a reference to a script that currently doesn't exist, but it will soon.
 
