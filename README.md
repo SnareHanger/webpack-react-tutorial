@@ -44,14 +44,14 @@ Super easy, in the command prompt or terminal, navigate to your project folder, 
 Then type `npm init`.  This will give you a wizard of sorts to help setup your project.  Hit enter after each step
 
 - `name`: The name of your project (by default will be the name of the folder)
-- `version`: Defaults to 1.0.0, but you can be fancy and start with 0.1.0 if you like
+- `version`: `1.0.0` Defaults to 1.0.0, but you can be fancy and start with 0.1.0 if you like
 - `description`: Description of your project.  You can leave it blank, but it probably helps to describe it.
-- `entry point`: This is the javascript file where everything will start at.  Think of it like the main trunk of a tree.  Defaults to index.js, let's stick with the default
-- `test command`: For now we'll leave this blank, but this is to be used for testing our code.
-- `git repository`: this can be blank, odds are if you're doing this, you don't need to put it in a git repo.
-- `keywords`: Mostly useful for when you're creating an NPM package for other people to install.  Makes it easier to find.  Leave it blank.
+- `entry point`: `index.js` This is the javascript file where everything will start at.  Think of it like the main trunk of a tree.  Defaults to index.js, let's stick with the default
+- `test command`: `(blank)` For now we'll leave this blank, but this is to be used for testing our code.
+- `git repository`: `(blank)` this can be blank, odds are if you're doing this, you don't need to put it in a git repo.
+- `keywords`: `(blank)` Mostly useful for when you're creating an NPM package for other people to install.  Makes it easier to find.  Leave it blank.
 - `author`: Your name.  Real, fake, github user account, whatever you want.
-- `license`: [So many options](https://opensource.org/licenses/alphabetical), but let's stick with the default, ISC
+- `license`: `(ISC)` [So many options](https://opensource.org/licenses/alphabetical), but let's stick with the default, ISC
 
 It will then show you the JSON content for you to confirm that it looks good.  If it looks good.  Hit enter.
 
