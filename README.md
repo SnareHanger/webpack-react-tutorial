@@ -9,13 +9,17 @@ Yes...there are.  My friend was talking to me one day about how every tutorial h
 
 # The What
 
+First off...what the hell is Webpack?  Webpack is a module bundler.  This means it takes all your individual javascript files and compiles them together in a smart way into a single file so when you're using this with a real website, the browser only needs to download a single javascript file instead of 10 or 100 files.  Check out https://webpack.github.io/ for more info.
+
+Second, what's React?  Odds are, if you're here you know already, if not, it's a library from Facebook that, IMHO, makes it way easy to make component based UIs with Javascript and HTML.  Check out http://facebook.github.io/react/ for more info.
+
 1. Creating a new project
 2. Installing npm
 3. Initializing the project with NPM
 4. Installing the packages we want (React, Webpack)
 5. Basics with webpack
-6. Setting up the webpack.config.js file
-7. Writing some components with React in ES6!
+6. Writing some components with React in ES6!
+7. Making things a bit more complicated with webpack configs
 
 # The New Project
 
@@ -72,8 +76,6 @@ Next we're gonna install ReactJS.  Type in `npm install react --save`.  This ins
 The `--save` is good in the case that you share this project with other people or you need to delete your `node_modules` folder, where NPM installs packages, for some reason.
 
 # Basics with Webpack
-
-First off...what the hell is Webpack?  Webpack is a module bundler.  This means it takes all your individual javascript files and compiles them together in a smart way into a single file so when you're using this with a real website, the browser only needs to download a single javascript file instead of 10 or 100 files.
 
 Let's do something real basic here.
 
